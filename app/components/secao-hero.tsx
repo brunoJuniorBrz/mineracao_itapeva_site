@@ -42,27 +42,29 @@ export default function SecaoHero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://img.freepik.com/premium-photo/industrial-landscape-aerial-view-openpit-mining-operation-with-mining-trucks-machinery_1325778-33378.jpg')`
+          backgroundImage: `url('https://www.cpaaustralia.com.au/-/media/project/cpa/intheblack/images/magazine-2022/09-september/open-cut-mine-bulga.jpg?h=720&iar=0&w=1280&rev=ae56c55307914c2a8bc65300af9147c7&hash=97B1F69A17BF707865A376CACA8DF45C')`
         }}
       >
         <div className="absolute inset-0 gradient-hero"></div>
       </div>
 
       {/* Conteúdo principal */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
             Mineração Itapeva
-            <span className="block text-2xl md:text-3xl text-gray-300 mt-2">
-              Líder em Filito no Brasil
-            </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
+          <div className="relative z-30 mb-6">
+            <span className="block text-2xl md:text-4xl text-yellow-400 font-bold drop-shadow-lg">
+              Maior produtora de filito do Brasil
+            </span>
+          </div>
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto drop-shadow-md">
             Desde 1959, produzindo com excelência e sustentabilidade
           </p>
         </motion.div>

@@ -17,7 +17,7 @@ export default function SecaoProdutos() {
       nome: 'Filito',
       categoria: 'Produto Principal',
       descricao: 'Rocha metamórfica de granulação fina, maior produção do Brasil',
-      imagem: 'https://cdn.zmescience.com/wp-content/uploads/2024/02/rock-vs-minerals-750x422.png',
+      imagem: 'https://images.pexels.com/photos/30176533/pexels-photo-30176533/free-photo-of-closeup-of-textured-metamorphic-rock-surface.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       aplicacoes: [
         'Indústria Cerâmica',
         'Construção Civil',
@@ -37,7 +37,7 @@ export default function SecaoProdutos() {
       nome: 'Ligamil',
       categoria: 'Plastificante',
       descricao: 'Plastificante para argamassa, substitui cal no preparo',
-      imagem: 'https://i.ytimg.com/vi/lGNgUGb6qdI/maxresdefault.jpg',
+      imagem: 'https://www.mesquitao.com.br/wp-content/uploads/2022/09/96613824-5dcb-46d5-9744-dbace6a99f4d__989129.jpg',
       aplicacoes: [
         'Grandes Construtoras',
         'Argamassas Prontas',
@@ -97,23 +97,23 @@ export default function SecaoProdutos() {
         </motion.div>
 
         {/* Produtos principais */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {produtos.map((produto, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 + index * 0.2 }}
-              className="bg-white rounded-xl shadow-lg overflow-hidden card-hover"
+              className="bg-white rounded-xl shadow-lg overflow-hidden card-hover h-full flex flex-col"
             >
               <div className="aspect-[16/9] bg-gray-200 overflow-hidden">
                 <img
                   src={produto.imagem}
                   alt={`Produto ${produto.nome}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <div className="p-8">
+              <div className="p-8 flex-1 flex flex-col">
                 <div className="flex items-center mb-4">
                   <produto.icon className={`w-8 h-8 ${produto.cor} mr-3`} />
                   <div>
@@ -126,32 +126,34 @@ export default function SecaoProdutos() {
                   </div>
                 </div>
                 
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {produto.descricao}
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mb-6 flex-1">
                   <div>
-                    <h4 className="font-semibold text-cinza-escuro mb-3">
+                    <h4 className="font-semibold text-cinza-escuro mb-3 flex items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
                       Aplicações:
                     </h4>
                     <ul className="space-y-2">
                       {produto.aplicacoes.map((aplicacao, i) => (
                         <li key={i} className="flex items-center text-sm text-gray-600">
-                          <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                          <div className="w-2 h-2 bg-vermelho-principal rounded-full mr-3 flex-shrink-0"></div>
                           {aplicacao}
                         </li>
                       ))}
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-cinza-escuro mb-3">
+                    <h4 className="font-semibold text-cinza-escuro mb-3 flex items-center">
+                      <Zap className="w-5 h-5 text-yellow-500 mr-2" />
                       Características:
                     </h4>
                     <ul className="space-y-2">
                       {produto.caracteristicas.map((caracteristica, i) => (
                         <li key={i} className="flex items-center text-sm text-gray-600">
-                          <Zap className="w-4 h-4 text-yellow-500 mr-2" />
+                          <div className="w-2 h-2 bg-vermelho-principal rounded-full mr-3 flex-shrink-0"></div>
                           {caracteristica}
                         </li>
                       ))}
@@ -159,7 +161,7 @@ export default function SecaoProdutos() {
                   </div>
                 </div>
 
-                <Button className="w-full bg-vermelho-principal hover:bg-red-700 text-white">
+                <Button className="w-full bg-vermelho-principal hover:bg-red-700 text-white transition-all duration-300 hover:shadow-lg">
                   Solicitar Informações
                 </Button>
               </div>

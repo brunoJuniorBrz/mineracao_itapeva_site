@@ -65,44 +65,44 @@ async function popularBancoDados() {
     data: [
       {
         titulo: 'Operação de Mineração a Céu Aberto',
-        descricao: 'Vista aérea da operação de extração de filito',
-        imagem_url: 'https://thumbs.dreamstime.com/b/open-pit-mining-iron-ore-quarry-large-industrial-excavators-heavy-machinery-loading-dump-truck-224428920.jpg',
+        descricao: 'Vista aérea moderna da operação de extração de filito com equipamentos de última geração',
+        imagem_url: 'https://www.cpaaustralia.com.au/-/media/project/cpa/intheblack/images/magazine-2022/09-september/open-cut-mine-bulga.jpg?h=720&iar=0&w=1280&rev=ae56c55307914c2a8bc65300af9147c7&hash=97B1F69A17BF707865A376CACA8DF45C',
         categoria: 'Operações',
         ordem: 1
       },
       {
-        titulo: 'Equipamentos de Alta Tecnologia',
-        descricao: 'Tratores de esteira e equipamentos modernos',
-        imagem_url: 'https://i.ytimg.com/vi/SzFK6tjkA1Q/maxresdefault.jpg',
+        titulo: 'Equipamentos de Mineração Pesados',
+        descricao: 'Caminhões de grande porte e equipamentos pesados trabalhando em pedreira',
+        imagem_url: 'https://www.mining-technology.com/wp-content/uploads/sites/19/2023/05/India-Coal.jpg',
         categoria: 'Equipamentos',
         ordem: 2
       },
       {
-        titulo: 'Produto Filito Beneficiado',
-        descricao: 'Filito após processo de beneficiamento',
-        imagem_url: 'https://www.neviraminerals.com/images/sliders/masterslider/nevira%20slider%204.jpg',
+        titulo: 'Rocha Metamórfica de Filito',
+        descricao: 'Textura detalhada da rocha metamórfica filito após extração',
+        imagem_url: 'https://images.pexels.com/photos/30176533/pexels-photo-30176533/free-photo-of-closeup-of-textured-metamorphic-rock-surface.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         categoria: 'Produtos',
         ordem: 3
       },
       {
         titulo: 'Laboratório de Controle de Qualidade',
-        descricao: 'Análises químicas e físicas dos produtos',
-        imagem_url: 'https://i.ytimg.com/vi/t3-HPVPzWeY/maxresdefault.jpg',
+        descricao: 'Laboratório moderno com equipamentos avançados para análise de qualidade',
+        imagem_url: 'https://datamyte.com/wp-content/uploads/2023/03/quality-control-lab-inspection.jpg',
         categoria: 'Qualidade',
         ordem: 4
       },
       {
-        titulo: 'Unidade de Britagem e Peneiramento',
-        descricao: 'Processamento com capacidade de 200 ton/hora',
-        imagem_url: 'https://i.ytimg.com/vi/5VMakwAyxZM/maxresdefault.jpg',
+        titulo: 'Instalações Industriais Modernas',
+        descricao: 'Unidade de processamento mineral com tecnologia de ponta',
+        imagem_url: 'https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-Process-Solutions-for-Mining.1536.jpg',
         categoria: 'Processamento',
         ordem: 5
       },
       {
-        titulo: 'Área de Armazenamento',
-        descricao: 'Estoque de produtos prontos para expedição',
-        imagem_url: 'https://www.build-review.com/wp-content/uploads/2021/03/Warehouse.jpg',
-        categoria: 'Logística',
+        titulo: 'Produto Ligamil',
+        descricao: 'Plastificante Ligamil para argamassa em embalagem profissional',
+        imagem_url: 'https://www.mesquitao.com.br/wp-content/uploads/2022/09/96613824-5dcb-46d5-9744-dbace6a99f4d__989129.jpg',
+        categoria: 'Produtos',
         ordem: 6
       }
     ]
