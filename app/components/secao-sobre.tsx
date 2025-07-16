@@ -39,7 +39,7 @@ export default function SecaoSobre() {
   ]
 
   return (
-    <section id="sobre" className="py-20 bg-branco-gelo">
+    <section id="sobre" className="py-20 bg-branco-gelo scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}

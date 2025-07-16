@@ -79,7 +79,7 @@ export default function SecaoProdutos() {
   ]
 
   return (
-    <section id="produtos" className="py-20 bg-cinza-claro">
+    <section id="produtos" className="py-20 bg-cinza-claro scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}

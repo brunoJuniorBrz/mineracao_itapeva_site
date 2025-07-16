@@ -37,7 +37,7 @@ export default function SecaoHero() {
   }
 
   return (
-    <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background com overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
