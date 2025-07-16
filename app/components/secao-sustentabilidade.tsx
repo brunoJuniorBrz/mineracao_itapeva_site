@@ -210,7 +210,7 @@ export default function SecaoSustentabilidade() {
               Responsabilidade Social
             </h3>
             <p className="text-gray-300 text-lg">
-              "Com o trabalho, dignificamos o Homem"
+              &ldquo;Com o trabalho, dignificamos o Homem&rdquo;
             </p>
           </div>
           
